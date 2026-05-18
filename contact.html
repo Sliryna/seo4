@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們 | AURA Skincare</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 50px;
+        }
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+        }
+        @media (max-width: 768px) {
+            .contact-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main style="padding-top: 120px; padding-bottom: 80px;">
+        <section class="container">
+            <div class="section-title">
+                <h1>聯絡我們</h1>
+                <p>我們隨時為您提供協助，解答您的肌膚疑慮。</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>聯繫資訊</h3>
+                    <p style="margin-bottom: 30px;">如果您有任何問題或建議，請隨時與我們聯繫。</p>
+                    <div style="margin-bottom: 20px;">
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i>
+                        台北市信義區忠孝東路五段 100 號
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i>
+                        +886 2 2345 6789
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i>
+                        support@auraskincare.com
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form onsubmit="event.preventDefault(); alert('感謝您的來信，我們將盡快回覆您！');">
+                        <div class="form-group">
+                            <label>您的姓名</label>
+                            <input type="text" placeholder="請輸入姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <label>電子郵件</label>
+                            <input type="email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>主旨</label>
+                            <input type="text" placeholder="如何稱呼您的需求">
+                        </div>
+                        <div class="form-group">
+                            <label>訊息內容</label>
+                            <textarea rows="5" placeholder="請輸入您的訊息..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">送出訊息</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="common.js"></script>
+</body>
+</html>

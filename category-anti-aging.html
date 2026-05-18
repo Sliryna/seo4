@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抗老系列 | AURA Skincare</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <span class="brand-name" style="font-size: 1.8rem; color: var(--primary);">AURA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="category-anti-aging.html" class="active" style="color: var(--primary);">抗老系列</a></li>
+                <li><a href="category-acne.html">抗痘系列</a></li>
+                <li><a href="category-sensitive.html">敏感肌系列</a></li>
+                <li><a href="category-dry.html">乾肌系列</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main style="padding-top: 120px;">
+        <section class="container section">
+            <div class="section-title">
+                <h1>抗老系列</h1>
+                <p>重塑緊緻，綻放年輕光采。專為熟齡肌膚設計的高效修護配方。</p>
+            </div>
+            <div class="product-grid" id="product-list">
+                <!-- Products will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+    <script>
+        renderCategory('anti-aging');
+    </script>
+</body>
+</html>
